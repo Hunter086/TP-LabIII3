@@ -1,0 +1,392 @@
+:root {
+    --backgroud-navbar: #A0D995;
+    --backgroud-body: rgb(108, 196, 161);
+    --backgroud-footer: #A0D995;
+    --text-color: rgb(133, 123, 107);
+  }
+  body {
+    background-color: var(--backgroud-body);
+    overflow-x: hidden;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  body.dark-theme {
+    --backgroud-navbar: #678b5f;
+    --backgroud-body: rgb(78, 145, 118);
+    --backgroud-footer: #678b5f;
+    --text-color: rgb(246, 227, 197);
+  }
+  footer{
+    background-color: var(--backgroud-footer);
+  }
+  
+  
+  /*navbar*/
+  .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--backgroud-navbar);
+    z-index: 5;
+  }
+  .navbar a{
+    color: var(--text-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  }
+  #dropdown-traduccion{
+    position: relative;
+  }
+  #icon-menu{
+    color: var(--text-color);
+  }
+  .navbar .dropdown-menu {
+    background-color: var(--backgroud-body);
+  }
+  #logo-nav{
+    width: 40px;
+  
+  }
+  .navbar .dropdown-menu li  a:hover, .navbar-nav .dropdown-menu li.active a {
+    color: var(--text-color) !important;
+    background-color: var(--backgroud-footer) !important;
+  }
+  .navbar a:focus{
+      color: var(--text-color) !important;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 20px;
+    }
+  .navbar a:hover{
+    color: var(--text-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  }
+  /*Main*/
+
+  .img img{
+    width: 100%;
+    }
+    #demo{
+        padding: 18px 0 0 0;
+    }
+    .carousel{
+        z-index: 1;
+    }
+    /*Carousel*/
+    #noticias{
+        padding-top: 4.5rem;
+        padding-bottom: 12.5vh;
+          position: relative;
+        text-align: center;
+        text-align: center;
+    }
+    #carouselmarcas {
+      align-items: flex-start;
+    }
+    #carouselmarcas img{
+        width: 100%;
+        height: 600px;
+        image-rendering: optimizeQuality;
+        
+    }
+    #carouselmarcas h5{
+      color: rgb(99, 192, 76);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 50px;
+    }
+    /*Nuestra Historia*/
+    .banner-our_philosophy {
+        /* The image used */
+        background-image: url("../img/Acercade/7.jpg");
+      
+        /* Full height */
+        height: 50%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .banner-marcas{
+        background-image: url("../img/Marcas/nuestrasmarcas.jpg");
+      
+        /* Full height */
+        height: 50%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container .content .about-image img{
+        width: 100%;
+        align-items: center;
+      }
+      .container .content {
+        position: relative;
+      }
+    /*Quienes Somos*/
+    .banner-become_our_brand {
+        /* The image used */
+        background-image: url("../img/Acercade/10.jpg");
+      
+        /* Full height */
+        height: 60%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container .content .about-image img{
+        width: 100%;
+        align-items: center;
+      }
+      .container .content {
+        position: relative;
+      }
+      .container .content .widget-title {
+        position: absolute;
+        top: 80%;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 22rem; /* Full width */
+        padding: 10px; /* Some padding */
+      }
+    .card{
+        width: 20%;
+        height: auto;
+    }
+    .card .card-body{
+        position: absolute;
+        bottom: 0;
+    }
+    .card .card-title{
+       
+    }
+    .card .card-text{
+        
+    }
+    .card .btn {
+        
+    }
+    /*Producto eco label*/
+    .banner-eco_label {
+        /* The image used */
+        background-image: url("../img/Marcas/ecolabel-banner.jpg");
+      
+        /* Full height */
+        height: 100%; 
+      
+        /* Center and scale the image nicely */
+        background-position: 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      /*productos terrabio*/
+      .banner-terrabio {
+        /* The image used */
+        background-image: url("../img/Marcas/terrabio-banner.jpg");
+      
+        /* Full height */
+        height: 100%; 
+      
+        /* Center and scale the image nicely */
+        background-position: 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .banner-terrabio .content,.banner-eco_label .content,.banner-become_our_brand .content,.banner-marcas .content, .banner-our_philosophy .content {
+        position: relative; /* Position the background text */
+        top: 55%;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1;; /* Grey text */
+        width: 100%; /* Full width */
+        padding: 20px; /* Some padding */
+      }
+      #eco-logo{
+        top: 4rem;
+        width:"5%";
+      }
+      #eco-logo img{
+        width:"5%";
+      }
+      #productos-eco-label, #productos-eco-label,#marcas{
+        margin: 2rem 0 2rem 0;
+      }
+      /*Contacto*/
+      #container-contancto{
+        padding: 3rem 0 0 0;
+      }
+      #box-animate-eolic{
+        width: 100px;
+      }
+      #box-animate-eolic #box-base{
+        position: relative;
+        width: 100px;
+      }
+      #box-animate-eolic #box-base #aspa-eolica {
+        position: absolute;
+        top: -85px;
+        left: -60px;
+        bottom: 0;
+
+      }
+      #box-animate-eolic #box-base #aspa-eolica1 {
+        position: absolute;
+        -webkit-transform:rotate(120deg);
+        -moz-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        -o-transform: rotate(120deg);
+        transform: rotate(120deg);
+        top: -80px;
+        left: -60px;
+        bottom: 0;
+
+      }
+      #box-animate-eolic #box-base #aspa-eolica2 {
+        position: absolute;
+        top: -85px;
+        left: -62px;
+        bottom: 0;
+        -webkit-transform:rotate(240deg);
+        -moz-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+        -o-transform: rotate(240deg);
+        transform: rotate(240deg);
+      }
+      #box-casa{
+        top: 0;
+        width: 100px;
+        margin-left: 92%;
+      }
+      #casa{
+        width: 5rem;
+        margin-top: -0.70rem;
+      }
+      #biker{
+        bottom: -2rem;
+      }
+      #box-hojas{
+        width: 50%;
+      }
+      #hojas{
+        width: 50%;
+        left: 0;
+      }
+      #carEco{
+        bottom: -2rem;
+        left: 75%;
+      }
+      #animalito-ardilla{
+        left: -60rem;
+        bottom: -5rem;
+      }
+    /*Footer*/
+    .footer img{
+        width: 70%;
+      }
+      .footer p{
+        font-size: 1rem;
+      }
+      @media only screen and (max-width: 600px) {
+        .footer p{
+          font-size: 0.5rem;
+        }
+        .container .content .widget-title{
+            font-size: 0.70rem;
+            width: 10rem; /* Full width */
+            top: 65%;
+          }
+        
+        .card{
+            width: 30%;
+            height: auto;
+        }
+        .card .card-body{
+            position: absolute;
+            bottom: 0;
+        }
+        .card .card-title{
+          display: none;
+        }
+        .card .card-text{
+          display: none;
+        }
+        .card .btn {
+            font-size: 0.5rem;
+        }
+        #box-animate-eolic{
+          display: none;
+        }
+        #box-casa{
+
+          margin-left: 82%;
+        }
+      }
+  @media only screen and (min-width:992px){
+    #nav-right-element{
+      margin-right: 10%;
+    }
+  }
+  /*@media (prefers-color-scheme: dark) {
+  
+    body {
+        --color-bg: rgb(53,53,53);
+        --color-text: wheat;
+    }
+  
+    body.light-theme {
+        --color-bg: #DDDDDD;
+        --color-text: #EE6352;
+    }
+    
+  }*/
+  /*Para las animaciones*/
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes girar1 {
+    from {
+      transform: rotate(120deg);
+    }
+    to {
+      transform: rotate(480deg);
+    }
+  }
+  @keyframes girar2 {
+    from {
+      transform: rotate(240deg);
+    }
+    to {
+      transform: rotate(600deg);
+    }
+  }
+
+  .animar {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }

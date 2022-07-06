@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="ISO-8859" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+	      <!--bootstrap-->
+        <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--Style-->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body class="dark-theme inglish-languaje" id="body">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg" id="ftco-navbar">
+          <!-- Container wrapper -->
+          <div class="container-fluid">
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <img src="icon/list.svg" alt="icon-menu">
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <!-- Left links -->
+              <ul class="navbar-nav">
+                <a class="navbar-brand" href="index.html">
+                  <img id="logo-nav" src="img/logo-nav.png"  alt="icon-navbar">
+                </a>
+                <li class="nav-item active"><a href="index.html" class="nav-link" id="home">Inicio</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#"  id="about" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Acerca de
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown-acercade">
+                    <li class="nav-item"><a class="nav-link dropdown-item" id="about_us" href="template/Acercade/quienessomos.html">¿Quiénes Somos?</a></li>
+                    <li class="nav-item"><a class="nav-link dropdown-item" id="our_philosophy" href="template/Acercade/nuestrafilosofia.html">Nuestra Filosofía</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="template/Marcas/marcas.html" id="become_our_brand" class="nav-link">Nuestras Marcas</a></li>
+                <li class="nav-item"><a href="template/Formularios/contacto.html" id="contact" class="nav-link">Contacto</a></li>
+              </ul>
+              <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+            <!-- Right elements -->
+            <div class="d-flex align-items-center" id="nav-right-element">
+              
+                <!-- Translate-->
+                <div id="dropdown-traduccion">
+                  <a class="dropdown dropdown-toggle" href="#" id="dropdown-translate" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="icon/translate.svg" alt="icon-translate">
+                  </a>
+                  <ul class="dropdown-menu" id="dropdown-item-translate" aria-labelledby="dropdown-translate">
+                    <li><a class="dropdown-item" id="translate-spanish" href="#" onclick="traduciraEspaniol();">Español</a></li>
+                    <li><a class="dropdown-item" id="translate-english" href="#" onclick="traduciraIngles();">Ingles</a></li>
+                  </ul>
+                </div>
+                <!-- Theme Dark -->
+                <a id="boton" class="dropdown-item"><img src="icon/circle-half.svg" alt="icono tema oscuro"></a>
+                <!-- Search -->
+                <a class="dropdown-item" href="#"><img src="icon/search.svg" alt="icon-login"></a>
+
+            </div>
+            <!-- Login -->
+            <div class="d-flex">
+              <a type="button" class="btn btn-success rounded-pill" href="template/Formularios/login.html">Login</a>
+            </div>
+            
+            <!-- Right elements -->
+          </div>
+           <!--Menu lateral-->
+        </nav>
+        <!-- Carousel -->
+        <main id="demo" class="carousel slide mt-5" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://t3.ftcdn.net/jpg/04/40/23/58/360_F_440235832_DGL87L7VrA0tlTOgELXRcon2L8fwxmB0.jpg" height="500px" alt="Marca Eco Label" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://img.freepik.com/free-vector/smart-house-remote-control-cartoon_33099-2040.jpg?w=2000" height="500px" alt="Casa Inteligentes" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="https://p.calameoassets.com/150618223631-86e8efd68db719029b0a44b9e5ef78f1/p1.jpg" height="500px" alt="marca terrabio" class="d-block w-100">
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </main>
+        <!--Main-->
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <h2 id="titulo1">Aero House</h2>
+              <h5 id="titulo2">¿Qué son?</h5>
+              <div class="img"><img src="https://www.bbva.com/wp-content/uploads/2019/10/minieolica.jpg" alt="imagen aero house"></div>
+              <p id="parafo1">Cuando hablamos de energía eólica siempre imaginamos los ‘bosques’ de enormes torres y palas que vemos desde la carretera. Existe también la variante doméstica: aerogeneradores para instalar en viviendas, pequeñas comunidades o negocios. Instalar las turbinas minieólicas es más sencillo de lo que parece.</p>
+              <h3 class="mt-4" id="titulo-link">Más Información en:</h3>
+              <p id="parafo-link">Información sobre la energía eólica</p>
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link link-primary" href="#" id="link1">Aero Generadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-success" href="#" id="link2">El viento como motor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-info" href="#" id="link3">El impulso del viento</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-warning disabled" href="#" id="link4">¿Qué son y como funcionan?</a>
+                </li>
+              </ul>
+              <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8 col-xs-12">
+              <h2 id="titulo3">El futuro en nuestras manos</h2>
+              <h5 id="titulo4">Impulsamos el crecimiento y producción de la energia sustentable, Dec 7, 2020</h5>
+              <div class="img"><img src="http://www.ccirr.com.ar/FotosNoticias/6790_G.jpg" alt="imagen ciudad de Rafaela"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt consectetur natus necessitatibus cum. Blanditiis commodi modi autem atque aut perspiciatis praesentium officiis odio dignissimos, minima non, asperiores ab et.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda quam voluptatem ab saepe, alias iusto blanditiis? Earum autem laudantium id quam, est veritatis blanditiis ipsum eum, a porro quis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quia sed praesentium quas a itaque nisi consectetur assumenda totam quasi blanditiis, temporibus eum eligendi, molestiae, odit qui! Ut, praesentium velit.</p>
+        
+              <h2 id="titulo5" class="mt-5">Nuestro Proyectos</h2>
+              <h5 id="titulo6">Proyecto Barrio Solar, Sep 2, 2020</h5>
+              <div class="img"><img src="https://www.showmetech.com.br/wp-content/uploads//2016/03/8119_e5c0796_korrigiert_kopie.jpg" alt="imagen proyecto solar barrio San Pedro"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt consectetur natus necessitatibus cum. Blanditiis commodi modi autem atque aut perspiciatis praesentium officiis odio dignissimos, minima non, asperiores ab et.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda quam voluptatem ab saepe, alias iusto blanditiis? Earum autem laudantium id quam, est veritatis blanditiis ipsum eum, a porro quis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quia sed praesentium quas a itaque nisi consectetur assumenda totam quasi blanditiis, temporibus eum eligendi, molestiae, odit qui! Ut, praesentium velit.</p>
+            </div>
+          </div>
+        </div>
+        <!--footer-->
+        <footer class="footer mt-5 p-4 text-center" >
+          <div class="d-flex justify-content-around">
+            <div class="p-2"><p class="copyright">copyright &copy;2022 <a href="#">Lucas Bauducco</a></p></div>
+            <div class="d-flex flex-row-reverse">
+              <div class="p-2"><a href="#">
+                <a href="#">
+                  <img class="icon ion-social-instagram" src="icon/facebook.svg" alt="icon-facebook"></img>
+                </a>
+              </div>
+              <div class="p-2">
+                  <a href="#">
+                    <img class="icon ion-social-instagram" src="icon/twitter.svg" alt="icon-twitter"></img>
+                  </a>
+              </div>
+              <div class="p-2">
+                <a href="#">
+                  <img class="icon ion-social-instagram" src="icon/icons-instagram.svg" alt="icon-instagram"></img>
+                </a>
+              </div>
+              <div class="p-2">
+                  <a href="#">
+                    <img class="icon ion-social-instagram" src="icon/discord.svg" alt="icon-discord"></img>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--jquery-->
+        <script src="bootstrap-5.0.2-dist/js/jquery-3.6.0.min.js"></script>
+        <!--js bootstrap-->
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+        <!--function add-->
+        <script src="js/traduction.js"></script>
+        <script src="js/darktheme.js"></script>
+
+       
+    </body>
+</html>

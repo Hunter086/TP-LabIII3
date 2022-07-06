@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="es-ar">
+    <head>
+        <title>¿Quíenes Somos?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <!--bootstrap-->
+        <link href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--Style-->
+        <link href="../../css/style.css" rel="stylesheet">
+        <!--jquerry-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../../js/animate.js"></script> 
+
+    </head>
+    
+    <body class="dark-theme" id="body">
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg" id="ftco-navbar">
+          <!-- Container wrapper -->
+          <div class="container-fluid">
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <img src="../../icon/list.svg" alt="icon-menu">
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <!-- Left links -->
+              <ul class="navbar-nav">
+                <a class="navbar-brand" href="../../index.html">
+                  <img id="logo-nav" src="../../img/logo-nav.png"  alt="icon-navbar">
+                </a>
+                <li class="nav-item active"><a href="../../index.html" class="nav-link" id="home">Inicio</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#"  id="about" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Acerca de
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown-acercade">
+                    <li class="nav-item"><a class="nav-link dropdown-item" id="about_us" href="../../template/Acercade/quienessomos.html">¿Quiénes Somos?</a></li>
+                    <li class="nav-item"><a class="nav-link dropdown-item" id="our_philosophy" href="../../template/Acercade/nuestrafilosofia.html">Nuestra Filosofía</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="../../template/Marcas/marcas.html" id="become_our_brand" class="nav-link">Nuestras Marcas</a></li>
+                <li class="nav-item"><a href="../../template/Formularios/contacto.html" id="contact" class="nav-link">Contacto</a></li>
+              </ul>
+              <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+            <!-- Right elements -->
+            <div class="d-flex align-items-center" id="nav-right-element">
+              
+                <!-- Translate-->
+                <div id="dropdown-traduccion">
+                  <a class="dropdown dropdown-toggle" href="#" id="dropdown-translate" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../../icon/translate.svg" alt="icon-translate">
+                  </a>
+                  <ul class="dropdown-menu" id="dropdown-item-translate" aria-labelledby="dropdown-translate">
+                    <li><a class="dropdown-item" id="translate-spanish" href="#" onclick="traduciraEspaniol();">Español</a></li>
+                    <li><a class="dropdown-item" id="translate-english" href="#" onclick="traduciraIngles();">Ingles</a></li>
+                  </ul>
+                </div>
+                <!-- Theme Dark -->
+                <a id="boton" class="dropdown-item"><img src="../../icon/circle-half.svg" alt="icon darklight"></a>
+                <!-- Search -->
+                <a class="dropdown-item" href="#"><img src="../../icon/search.svg" alt="icon-login"></a>
+
+            </div>
+            <!-- Login -->
+            <div class="d-flex">
+              <a type="button" class="btn btn-success rounded-pill" href="#"></a>
+            </div>
+            
+            <!-- Right elements -->
+          </div>
+           <!--Menu lateral-->
+        </nav>      
+        <div class="banner-become_our_brand"> 
+            <div class="content">
+                <h1>Acerca de ...</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="container mt-5">
+              <div class="content" id="nuestra-organizacion">
+                    <h4 class="widget-title">Nuestra Organización</h4>
+                    <div class="about-image">
+                      <img class="" src="../../img/Acercade/11.jpg" alt="image ¿Quienes somos?" >
+                    </div>
+              </div> 
+                    <h3>Somos...</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <hr>
+        </div>
+
+        <div class="fixed-bottom" id="carEco">
+          <img src="../../img/carEco.png"  alt="logo eco">
+        </div>
+        <!--footer-->
+        <footer class="footer dark-theme mt-5 p-4 text-center" >
+          <div class="d-flex justify-content-around">
+            <div class="p-2"><p class="copyright">copyright &copy;2022 <a href="#">Lucas Bauducco</a>  </p></div>
+            <div class="d-flex flex-row-reverse">
+              <div class="p-2"><a href="#">
+                <a href="#">
+                  <img class="icon ion-social-instagram" src="../../icon/facebook.svg" alt="icon-facebook"></img>
+                </a>
+              </div>
+              <div class="p-2">
+                  <a href="#">
+                    <img class="icon ion-social-instagram" src="../../icon/twitter.svg" alt="icon-twitter"></img>
+                  </a>
+              </div>
+              <div class="p-2">
+                <a href="#">
+                  <img class="icon ion-social-instagram" src="../../icon/icons-instagram.svg" alt="icon-instagram"></img>
+                </a>
+              </div>
+              <div class="p-2">
+                  <a href="#">
+                    <img class="icon ion-social-instagram" src="../../icon/discord.svg" alt="icon-discord"></img>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--jquery-->
+        <script src="../../bootstrap-5.0.2-dist/js/jquery-3.6.0.min.js"></script>
+        <!--js bootstrap-->
+        <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+        <!--function add-->
+        <script src="../../js/darktheme.js"></script>
+        <script src="../../js/traduction.js"></script>
+
+       
+    </body>
+</html>
